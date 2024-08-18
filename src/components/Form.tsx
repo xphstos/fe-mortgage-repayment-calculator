@@ -39,7 +39,6 @@ export const Form = ({ onFormSubmit }: FormProps) => {
     },
   });
   const onSubmit: SubmitHandler<FormType> = (data) => {
-    // console.log(data);
     const { monthlyPayment, totalPayment, totalInterest } =
       calculatePayment(data);
     onFormSubmit({ monthlyPayment, totalPayment, totalInterest });
@@ -100,7 +99,7 @@ export const Form = ({ onFormSubmit }: FormProps) => {
             setValueAs: (v) => parseInt(v ? v : 0),
           }}
         />
-        <div className="sm:col-span-2 space-y-3">
+        <fieldset className="sm:col-span-2 space-y-3">
           <div className="text-slate-700">Mortgage Type</div>
           <label className="flex group items-center gap-4 px-4 rounded-md ring-1 ring-slate-300 min-h-12 focus-within:ring-slate-500 hover:bg-slate-100 transition-colors has-[:checked]:bg-lime/10 has-[:checked]:ring-lime">
             <input
@@ -130,7 +129,7 @@ export const Form = ({ onFormSubmit }: FormProps) => {
               Interest Only
             </div>
           </label>
-        </div>
+        </fieldset>
         <button
           className="sm:col-span-2 justify-self-start bg-lime hover:bg-lime/75 min-h-14 flex items-center gap-3 justify-center px-8 rounded-full font-bold cursor-pointer transition-all disabled:pointer-events-none disabled:bg-slate-100 disabled:text-slate-300"
           type="submit"

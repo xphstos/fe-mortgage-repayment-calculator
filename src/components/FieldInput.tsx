@@ -33,7 +33,7 @@ export function FieldInput<T extends FieldValues>({
   ...props
 }: FieldProps<T>) {
   return (
-    <label className={cn("space-y-3", className)} {...props}>
+    <label className={cn("block space-y-3", className)} {...props}>
       {label && <div className="text-slate-700">{label}</div>}
       <div
         className={cn(
