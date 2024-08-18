@@ -45,6 +45,11 @@ export const Form = ({ onFormSubmit }: FormProps) => {
     onFormSubmit({ monthlyPayment, totalPayment, totalInterest });
   };
 
+  const clearAll = () => {
+    reset();
+    onFormSubmit(null);
+  };
+
   return (
     <div className="px-6 py-10 sm:p-10">
       <header className="flex items-center gap-4 mb-10 flex-wrap sm:justify-between">
@@ -54,7 +59,7 @@ export const Form = ({ onFormSubmit }: FormProps) => {
         <button
           className="underline hover:no-underline leading-none text-slate-700 hover:text-slate-900 focus-visible:text-slate-900 focus-visible:no-underline transition-all basis-[fit-content]"
           type="button"
-          onClick={() => reset()}
+          onClick={clearAll}
         >
           Clear All
         </button>
