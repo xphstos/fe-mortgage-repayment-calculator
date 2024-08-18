@@ -5,5 +5,5 @@ This is a solution to the [Mortgage repayment calculator challenge on Frontend M
 
 ### Links
 
-- Solution URL: [You're here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [You're here](https://github.com/xphstos/fe-mortgage-repayment-calculator)
+- Live Site URL: [Add live site URL here](1ae50d47f337bc9dca106c3a21b2c699a9ff0d57.surge.sh)
