@@ -57,8 +57,9 @@ export function FieldInput<T extends FieldValues>({
         ) : null}
         <input
           className="min-w-1 w-full flex-auto outline-none font-bold text-slate-900 text-lg px-4 leading-none"
-          type="text"
+          type="number"
           step={0.1}
+          inputMode="numeric"
           {...inputProps}
           {...register(name, registerOptions)}
         />
