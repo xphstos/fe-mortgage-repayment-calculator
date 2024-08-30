@@ -14,7 +14,7 @@ export const Calculator = () => {
   const { formatCurrency } = useCurrencyFormatter();
 
   return (
-    <article className="sm:shadow-2xl sm:shadow-slate-900/10 sm:rounded-3xl bg-white grid lg:grid-cols-2 lg:w-[min(62.5rem,100%)] sm:w-[min(31.25rem,100%)]">
+    <main className="sm:shadow-2xl sm:shadow-slate-900/10 sm:rounded-3xl bg-white grid lg:grid-cols-2 lg:w-[min(62.5rem,100%)] sm:w-[min(31.25rem,100%)]">
       <Form onFormSubmit={setResults} />
       {results ? (
         <div className="px-6 py-10 sm:p-10 lg:rounded-se-3xl sm:rounded-ee-3xl sm:rounded-es-3xl lg:rounded-es-[5rem] bg-slate-900 text-white">
@@ -53,6 +53,6 @@ export const Calculator = () => {
           </p>
         </div>
       )}
-    </article>
+    </main>
   );
 };
